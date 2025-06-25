@@ -12,23 +12,23 @@ function validationCheck() {
     const message = document.getElementById("message");
 
     if (name.value.length < 1) {
-        name.placeholder = "NAME REQUIRED"
+        name.placeholder = "NAME REQUIRED";
     }
 
     if (!emailRegex.test(email.value)) {
-        email.placeholder = "VALID EMAIL REQUIRED"
-        email.value = ""
+        email.placeholder = "VALID EMAIL REQUIRED";
+        email.value = "";
     }
 
     if (message.value.length < 1) {
-        message.placeholder = "MESSAGE REQUIRED"
+        message.placeholder = "MESSAGE REQUIRED";
     }
 
     if (emailRegex.test(email.value) && name.value.length > 0 && message.value.length > 0) {
-        form.submit()
-        name.placeholder = ""
-        email.placeholder = ""
-        message.placeholder = "Insert Message"
+        form.submit();
+        name.placeholder = "";
+        email.placeholder = "";
+        message.placeholder = "Insert Message";
     }
-    event.preventDefault()
+    event.preventDefault();
 }
