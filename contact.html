@@ -32,22 +32,23 @@
 
     <main class="m-auto w-200">
         <h1 class="text-5xl text-center font-bold mt-8">Contact Me Here</h1>
-        <form class="border-19 border-gray-500 bg-blue-500 my-10 p-4 w-full"
+        <form class="border-19 border-gray-500 bg-blue-500 my-10 p-4 w-full" id="contact-form"
             action="mailto:20122739@tafe.wa.edu.au?subject=Contact" method="post" enctype="text/plain">
             <fieldset>
-                <label class="text-3xl" for="name">Name</label><br>
-                <input class="border-3 w-full focus:bg-blue-100" type="text" name="Name" id="name">
+                <label class="text-3xl" for="user-name">Name</label><br>
+                <input class="border-3 w-full focus:bg-blue-100" type="text" name="Name" id="user-name">
                 <br>
                 <br>
-                <label class="text-3xl" for="email">Email</label><br>
-                <input class="border-3 w-full focus:bg-blue-100" type="text" name="Email" id="email">
+                <label class="text-3xl" for="user-email">Email</label><br>
+                <input class="border-3 w-full focus:bg-blue-100" type="text" name="Email" id="user-email">
                 <br>
                 <br>
                 <label class="text-3xl" for="message">Message</label><br>
                 <textarea class="border-3 w-full focus:bg-blue-100" name="Message" id="message"
                     placeholder="Insert Message"></textarea><br>
-                <button class="border-3 text-3xl hover:bg-blue-100 transition" type="submit">Submit</button>
+                <button class="border-3 text-3xl hover:bg-blue-100 transition" id="submit-button" type="submit">Submit</button>
             </fieldset>
+            <script src="assets/js/contact.js"></script>
         </form>
     </main>
 
